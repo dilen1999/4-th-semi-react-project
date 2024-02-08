@@ -1,0 +1,18 @@
+.space{
+    position: absolute;
+    top: 100px;
+}
+.navbaradduser{
+    z-index: 1;
+}
+
+
+.cloumn{
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+
+.center{
+    margin-left: 230px;
+}

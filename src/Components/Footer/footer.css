@@ -1,0 +1,131 @@
+:root{
+    --PrimaryColor: hsl(199,100%,33%);
+    --SecondaryColor: hsl(187,85%,43%);
+    --gradientColor: linear-gradient(to right,
+    hsl(187,85%,43%), hsl(199,100%,33%));
+    --WhiteColor: hsl(0,0%,100%);
+    --blackColor: hsl(201,33%,16%);
+    --textColor: hsl(240,4%,36%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText: rgb(190,190,190);
+    --inputColor: rgb(239,239,239);
+    --bodyColor: rgb(240,240,246);
+    --cardBG: rgb(225,225,225);
+  }
+
+  
+
+  .footer{
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    .vedioDiv{
+        position: absolute;
+        height: max-content;
+        width: 100%;
+
+        vedio{
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            background: rgba(10,84,107,0.307);
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            mix-blend-mode: multiply;
+        }
+    }
+
+    .secContent {
+        width: 100%;
+        height: max-content;
+        padding: 2rem; /* Set a valid padding value */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+        row-gap: 2rem;
+        z-index: 100;
+    }
+    
+    .contactDiv {
+        display: flex; /* Add this line to make it a flex container */
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .text small {
+        font-size: 13px;
+        font-weight: 400;
+        color: var(--WhiteColor);
+    }
+    
+    .text h2 {
+        color: var(--WhiteColor);
+        font-size: 1.8rem;
+    }
+    
+    .inputDiv {
+        width: 100%;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    
+    .inputDiv input {
+        width: 100%;
+        padding: .5rem .6rem;
+        border-radius: 3rem;
+        border: 1px solid var(--WhiteColor);
+        outline: none;
+        background: transparent;
+        color: var(--WhiteColor);
+    }
+    
+    .inputDiv input::placeholder {
+        color: var(--WhiteColor);
+        opacity: .5;
+    }
+
+    .btn{
+        width: 100%;
+        justify-content: center;
+        color: var(--WhiteColor);
+        font-weight: 500;
+        gap: .5rem;
+
+        .icon{
+            font-size: 18px;
+        }
+    }
+
+   
+    
+    .footerParagraph{
+        font-size: 13px;
+        color: var(--WhiteColor);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footerIntro{
+        color: var(--WhiteColor);
+    }
+    .logoes{
+        color: var(--WhiteColor);
+        font-weight: 500;
+        padding: auto;
+        
+    }
+    
+
+  }
